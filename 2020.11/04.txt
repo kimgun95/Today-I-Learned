@@ -1,0 +1,15 @@
+### 1. 웹 페이지 기획   
+- API를 중점으로 어떤 것을 활용해 볼까 하며 검색을 해보았다.   
+네이버, 구글, 페이스북 등 공공API를 포함한 다양한 것들이 있었는데 그중 유독 눈에 들어 온 것은 카카오API에 있는 Vision API였다.   
+   
+현재는 API의 동작 원리를 파악한 뒤 개념을 확장해나가는 방향으로 프로젝트를 진행할 계획이다.   
+﻿https://developers.kakao.com/docs/latest/ko/vision/dev-guide#recog-face   
+
+### 2. API 사용중 에러
+카카오 API에서 얼굴 탐색 부분에 대한 샘플 코드를 jupyter notebook에서 테스트 해 보았는데 다음과 같은 에러가 발생하였다.   
+ipykernel-launcher-py-error-unrecognized-arguments   
+   
+이는 argparse라는 라이브러리를 사용하기 원한다면 터미널이나 다른 프레임워크에서 실행을 해야 된다고 한다.   
+따라서 해결책으로 easydict 라이브러리를 활용하는 방법이 있고 우선적으로는 이것을 활용하여 사진 파일을 입력 값으로 넣어 주었을 때 사진의 얼굴을 탐색하여 모자이크하는 예제를 성공시켜 보았다.   
+   
+다른 API도 사용을 시도하였으나 또 에러가 발생하여 다음날 다시 시도해보아야 겠다.
